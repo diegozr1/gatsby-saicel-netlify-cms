@@ -1,0 +1,125 @@
+.value-section--right {
+    display: flex;
+    flex-direction: column;
+}
+
+.value-section--left {
+    display: none;
+}
+
+.value-title--main-text {
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.value-section--item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.value-section--item-main {
+    font-weight: 600;
+}
+
+.value-section--item-main,
+.value-section--item-text {
+    margin-left: 20px;
+    color: #1C1D1C;
+    font-size: 16px;
+    letter-spacing: 0.16px;
+    line-height: 24px;
+}
+
+.value-section--separator {
+    content: url("../../../../img/arrow-bottom.png");
+    align-self: center;
+    margin: 0 0 40px;
+}
+
+.value-section--description {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 24px;
+}
+
+.value-section--bottom {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .press-title--main-text,
+    .value-title--main-text {
+        text-align: left;
+        margin-bottom: 100px;
+    }
+
+    .value-section--main {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .value-section--left {
+        display: flex;
+        flex-flow: column;
+    }
+    
+    .value-section--img:first-child {
+        margin-bottom: 70px;
+    }
+
+    .value-section--bottom {
+        align-items: flex-start;
+    }
+
+    .value-section--img {
+        width: 360px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .press-title--main-text,
+    .value-title--main-text {
+        width: 46%;
+    }
+
+    .value-section--right {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        width: 40%;
+    }
+
+    .value-section--bottom {
+        align-self: flex-start;
+        width: 65%;
+    }
+
+    .value-section--img {
+        width: auto;
+    }
+
+    .value-section--item {
+        margin-bottom: 55px;
+    }
+
+    .value-section--item-main,
+    .value-section--item-text {
+        margin-left: 40px;
+        font-size: 25px;
+        letter-spacing: 0.25px;
+        line-height: 38px;
+    }
+
+    .value-section--separator {
+        margin: 0 0 55px;
+    }
+    
+    .value-section--description {
+        font-size: 16px;
+        line-height: 28px;
+        margin-bottom: 40px;
+    }
+}

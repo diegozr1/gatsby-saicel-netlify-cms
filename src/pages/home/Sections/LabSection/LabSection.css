@@ -1,0 +1,113 @@
+.lab-section {
+    margin: 0px;
+}
+
+.lab-section--left img {
+    width: 100%;
+}
+
+.lab-section--header {
+    margin: 0 20px;
+}
+
+.lab-section--container {
+    display: flex;
+    flex-flow: column;
+}
+
+.lab-section--title {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.lab-title--main-text {
+    margin-bottom: 32px;
+}
+
+.lab-section--header {
+    margin-bottom: 32px;
+}
+
+.lab-title--description {
+    font-size: 14px;
+    letter-spacing: 0.14px;
+    line-height: 18px;
+}
+
+.lab-section--main {
+    display: flex;
+    flex-flow: column;
+}
+
+.lab-section--left {
+    margin-bottom: 32px;
+}
+
+.lab-section--right {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.lab-section--count-card {
+    margin-bottom: 32px;
+}
+
+.lab-section--left img {
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .lab-section--header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .lab-section--title {
+        width: 47%;
+        align-items: flex-start;
+    }
+
+    .lab-title--description {
+        width: 48%;
+        font-size: 25px;
+        letter-spacing: 0.25px;
+        line-height: 38px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .lab-section--title {
+        margin-bottom: 0;
+        width: 44%;
+    }
+
+    .lab-title--description {
+        text-align: left;
+        width: 40%;
+    }
+
+    .lab-section--header {
+        margin: 0 0 40px;
+    }
+
+    .lab-section--count-card {
+        margin-bottom: 35px;
+    }
+    
+    .lab-section--main {
+        flex-flow: row;
+    }
+
+    .lab-section--left {
+        margin: 0;
+    }
+
+    .lab-section--left img {
+        width: auto;
+    }
+}

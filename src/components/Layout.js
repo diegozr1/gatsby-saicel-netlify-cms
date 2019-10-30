@@ -1,7 +1,8 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import { Footer, Navbar } from '../components'
-import './all.sass'
+import 'material-icons/iconfont/material-icons.scss'
+import './global.css'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
 
@@ -37,6 +38,7 @@ const TemplateWrapper = ({ children }) => {
           href={`${withPrefix('/')}img/safari-pinned-tab.svg`}
           color="#ff4400"
         />
+        <link href="../node_modules/material-icons/iconfont/material-icons.css" rel="stylesheet"></link>
         <meta name="theme-color" content="#fff" />
 
         <meta property="og:type" content="business.business" />
@@ -48,7 +50,7 @@ const TemplateWrapper = ({ children }) => {
         />
       </Helmet>
       <Navbar />
-      <div>{children}</div>
+      <div id="root">{children}</div>
       <Footer />
     </div>
   )

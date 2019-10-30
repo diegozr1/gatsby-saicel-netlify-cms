@@ -1,0 +1,38 @@
+.card {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 56px 0 rgba(30,30,30,0.05);
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: 0 20px 56px 0 rgba(30,30,30,0.15);
+}
+
+.card:hover .card--title {
+    color: #1C94EB;
+}
+
+.card--img-container {
+    display: flex;
+}
+
+.card--img-container img {
+    width: 100%;
+}
+
+.card--container {
+    padding: 30px 20px;
+}
+
+.card--title {
+    margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    .card {
+        width: 410px;
+    }
+}

@@ -1,0 +1,35 @@
+.count-card--container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(186,186,186,1);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(186,186,186,1);
+    box-shadow: 0px 0px 20px 0px rgba(186,186,186,1);
+}
+
+.count-card--counter {
+    font-family: 'DM Sans', sans-serif;
+    color: #BDBDBD;
+    font-size: 90px;
+    letter-spacing: 0.45px;
+    line-height: 1;
+}
+
+.count-card--title {
+    color: #1C94EB;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.37px;
+    margin-bottom: 25px;
+}
+
+.count-card--range {
+    color: #555;
+    font-size: 15px;
+    letter-spacing: 0.63px;
+    line-height: 20px;
+}

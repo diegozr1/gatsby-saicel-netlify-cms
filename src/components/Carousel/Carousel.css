@@ -1,0 +1,66 @@
+.carousel--container {
+    background: #ffffff;
+    position: relative;
+    overflow: hidden;
+    height: calc(478px - 72px);
+    padding: 36px 20px;
+}
+
+.carousel--children {
+    position: relative;
+    height: calc(478px - 72px);
+    width: 100%;
+}
+
+.carousel--children > div {
+    display: flex;
+    align-items: center;
+}
+
+.carousel--arrow-left,
+.carousel--arrow-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 5;
+    width: 15px;
+}
+
+.carousel--arrow-right {
+    content: url("../../img/arrow-right.png");
+    right: 20px;
+}
+
+.carousel--arrow-left {
+    content: url("../../img/arrow-left.png");
+    left: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 992px) {
+    .carousel--container {
+        height: calc(478px - 160px);
+        padding: 80px 75px;
+    }
+
+    .carousel--children {
+        height: calc(478px - 160px);
+    }
+
+    .carousel--arrow-left,
+    .carousel--arrow-right {
+        width: auto;
+    }
+
+    .carousel--arrow-right {
+        right: 75px;
+    }
+    
+    .carousel--arrow-left {
+        left: 75px;
+    }
+}

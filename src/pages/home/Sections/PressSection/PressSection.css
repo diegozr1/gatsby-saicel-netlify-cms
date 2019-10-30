@@ -1,0 +1,29 @@
+.press-section--cards-container {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.press-title--main-text {
+    width: 100%;
+    margin-bottom: 40px !important;
+}
+
+.press-section--cards-container > div {
+    margin-bottom: 20px;
+}
+
+.press-section--cards-container > div:last-child {
+    margin-bottom: 0;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 992px) {
+    .press-section--cards-container {
+        justify-content: space-between;
+    }
+}
