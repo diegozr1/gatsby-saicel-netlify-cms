@@ -1,0 +1,14 @@
+.nav-item--link {
+    display: flex;
+    padding: 0;
+    border: 0;
+    color: #1E1E1E;
+    font-size: 25px;
+    font-weight: normal;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-item--link img {
+    margin-left: 17px;
+}

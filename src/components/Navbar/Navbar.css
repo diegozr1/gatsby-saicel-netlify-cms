@@ -1,0 +1,134 @@
+.nav--container {
+    width: 100%;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    background-color: transparent;
+    transition: all 0.5s;
+}
+
+.nav--container.scrolled {
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.nav--logo {
+    content: url(../../img/Logo_white_short.png);
+    margin-left: -15px;
+}
+
+.nav--logo.white-logo {
+    content: url(../../img/Logo_white_short.png) !important;
+    margin-left: -15px;
+}
+
+.nav--right {
+    display: flex;
+    align-items: center;
+}
+
+.nav--main {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.side-nav--toggle,
+.nav--toggle {
+    display: flex;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.side-nav--toggle:focus,
+.side-nav--toggle:active,
+.side-nav--toggle:hover,
+.nav--toggle:focus,
+.nav--toggle:active,
+.nav--toggle:hover {
+    outline: none;
+}
+
+.side-nav--menu {
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end
+}
+
+.side-nav--main {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    padding: 35px 25px 25px 25px;
+}
+
+.side-nav--menu-item {
+    margin-bottom: 38px;
+}
+
+.side-nav--toggle {
+    margin-bottom: 50px;
+}
+
+.side-nav--container {
+    min-width: 400px;
+    max-width: 400px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -400px;
+    transition: all 0.3s;
+    background: white;
+    z-index: 21;
+}
+
+.side-nav--container.active {
+    right: 0;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 20;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+@media only screen and (min-width: 768px) {
+    .nav--main {
+        padding: 25px;
+    }
+
+    .nav--container .nav--logo {
+        content: url(../../img/Logo_dark_short.png);
+    }
+
+    .nav--container.scrolled .nav--logo {
+        content: url(../../img/Logo_white_short.png);
+        margin-left: -15px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .nav--main {
+        padding: 25px 75px;
+    }
+
+    .side-nav--main {
+        padding: 35px 75px 25px 25px;
+    }    
+}
