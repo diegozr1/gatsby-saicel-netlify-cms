@@ -71,8 +71,8 @@ export default () => (
     query={graphql`
       query PatologiesRoll {
         allMarkdownRemark(
-          sort: { order: DESC, fields: [frontmatter___date], fileAbsolutePath: {regex : "\/patologies/"} }
-          filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+          sort: { order: DESC, fields: [frontmatter___date]}
+          filter: { frontmatter: { templateKey: { eq: "blog-post" }, path: { eq: ${__dirname} + "/src/markdown-pages" } } }
         ) {
           edges {
             node {
