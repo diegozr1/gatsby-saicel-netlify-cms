@@ -1,5 +1,6 @@
 import React from "react";
 
+import Layout from "../../components/Layout";
 // import { Contact } from "../../components";
 
 import {
@@ -13,7 +14,7 @@ import {
 
 const Home = ({ history }) => {
     return (
-        <>
+        <Layout>
             <HomeSection />
             <CellSection />
             <ValueSection />
@@ -21,7 +22,7 @@ const Home = ({ history }) => {
             <LabSection />
             <CarouselSection />
             {/* <Contact /> */}
-        </>
+        </Layout >
     );
 };
 
