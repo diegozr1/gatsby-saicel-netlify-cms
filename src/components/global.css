@@ -8,8 +8,7 @@
     scroll-behavior: smooth;
   }
   
-  #root,
-  #___gatsby {
+  #root {
     background-color: #FAFAFA;
     display: flex;
     flex-flow: column;
