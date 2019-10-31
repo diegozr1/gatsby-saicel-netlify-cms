@@ -10,6 +10,7 @@ import {
     MenuIcon,
     PatIcon,
     PressIcon,
+    LogoWhite
 } from "../../img";
 
 import "./Navbar.css";
@@ -34,7 +35,7 @@ const Navbar = () => {
         <header className={`nav--container ${isTop ? "" : "scrolled"}`}>
             <div className="nav--main">
                 <div className="nav--left">
-                    <img className={`nav--logo ${normalNav ? "" : "white-logo"}`} alt="saicel-logo"/>
+                    <img src={LogoWhite} className={`nav--logo ${normalNav ? "" : "white-logo"}`} alt="saicel-logo"/>
                 </div>
                 <div className="nav--right">
                     <button className="nav--toggle" onClick={handleToggle}>
@@ -55,7 +56,7 @@ const Navbar = () => {
                             <NavItem text="Nuestros Laboratorios" link="/our-lab" icon={LabIcon} alt="lab-icon" />
                         </li>
                         <li className="side-nav--menu-item">
-                            <NavItem text="Patologia" link="/patologia" icon={PatIcon} alt="pat-icon" />
+                            <NavItem text="Patologia" link="/patologies" icon={PatIcon} alt="pat-icon" />
                         </li>
                         <li className="side-nav--menu-item">
                             <NavItem text="FAQ" link="/faq" icon={FAQIcon} alt="faq-icon" />
