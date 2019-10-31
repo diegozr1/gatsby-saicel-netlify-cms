@@ -6,7 +6,7 @@ import PatologiesRoll from '../../components/PatologiesRoll'
 export default class PatologiesIndexPage extends React.Component {
   render() {
     return (
-      <Layout>
+      <Layout path={this.props.path}>
         <div
           className="full-width-image-container margin-top-0"
           style={{

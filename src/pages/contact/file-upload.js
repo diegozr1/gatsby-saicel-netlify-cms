@@ -42,7 +42,7 @@ export default class Contact extends React.Component {
 
   render() {
     return (
-      <Layout>
+      <Layout path={this.props.path}>
         <section className="section">
           <div className="container">
             <div className="content">

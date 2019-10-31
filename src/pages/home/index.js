@@ -12,13 +12,13 @@ import {
     ValueSection,
 } from "../../sections/HomePage";
 
-const Home = ({ history }) => {
+const Home = ({ path }) => {
     return (
-        <Layout>
+        <Layout path={path}>
             <HomeSection />
             <CellSection />
             <ValueSection />
-            <PressSection history={history} />
+            <PressSection history={path} />
             <LabSection />
             <CarouselSection />
             {/* <Contact /> */}
