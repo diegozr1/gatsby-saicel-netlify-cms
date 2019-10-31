@@ -16,6 +16,7 @@ import {
 import "./Navbar.css";
 
 const Navbar = () => {
+    if (typeof window !== `undefined`) return null;
     const currentLocation = window.location.pathname;
     const normalNav = currentLocation === "/";
     const [toggle, setToggle] = useState(false);

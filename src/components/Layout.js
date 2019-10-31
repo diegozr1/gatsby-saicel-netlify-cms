@@ -6,8 +6,6 @@ import './global.css'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
 
-const NavbarComp = typeof window !== `undefined` ? Navbar : null
-
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
   return (
@@ -51,7 +49,7 @@ const TemplateWrapper = ({ children }) => {
           content={`${withPrefix('/')}img/og-image.jpg`}
         />
       </Helmet>
-      <NavbarComp />
+      <Navbar />
       <div id="root">{children}</div>
       <Footer />
     </div>
