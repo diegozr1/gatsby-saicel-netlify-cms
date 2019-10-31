@@ -9,7 +9,7 @@ import {
     LabSection,
     PressSection,
     ValueSection,
-} from "./Sections";
+} from "../../sections/HomePage";
 
 const Home = ({ history }) => {
     return (

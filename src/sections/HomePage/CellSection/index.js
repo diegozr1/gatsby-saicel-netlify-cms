@@ -5,8 +5,8 @@ import {
     Button,
     CountCard,
     SectionName,
-} from "../../../../components";
-import { CellImage } from "../../../../img";
+} from "../../../components";
+import { CellImage } from "../../../img";
 
 import "./CellSection.css";
 

@@ -4,10 +4,10 @@ import Slide from "react-reveal/Slide";
 import {
     Carousel,
     CarouselItem,
-} from "../../../../components";
+} from "../../../components";
 import {
     CarouselImg,
-} from "../../../../img";
+} from "../../../img";
 
 import "./CarouselSection.css";
 

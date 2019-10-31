@@ -1,9 +1,9 @@
 import React from "react";
 
-import { Button } from "../../../../components";
+import { Button } from "../../../components";
 import {
     HomeScroll,
-} from "../../../../img";
+} from "../../../img";
 
 import "./HomeSection.css";
 

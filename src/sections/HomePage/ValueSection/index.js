@@ -3,14 +3,14 @@ import React from "react";
 import {
     Button,
     SectionName,
-} from "../../../../components";
+} from "../../../components";
 import {
     CertificadoAnalisis,
     CertificadoCellCount,
     ValueImg1,
     ValueImg2,
     ValueImg3,
-} from "../../../../img";
+} from "../../../img";
 
 import "./ValueSection.css";
 

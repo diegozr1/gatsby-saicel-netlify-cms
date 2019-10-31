@@ -4,13 +4,13 @@ import Fade from "react-reveal/Fade";
 import {
     Card,
     SectionName,
-} from "../../../../components";
+} from "../../../components";
 
 import {
     CardImage,
     CardImage1,
     CardImage2,
-} from "../../../../img";
+} from "../../../img";
 
 import "./PressSection.css";
 

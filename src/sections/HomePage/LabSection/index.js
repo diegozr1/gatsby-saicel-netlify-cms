@@ -4,10 +4,10 @@ import {
     Button,
     CountCard,
     SectionName,
-} from "../../../../components";
+} from "../../../components";
 import {
     LabImage,
-} from "../../../../img";
+} from "../../../img";
 
 import "./LabSection.css";
 

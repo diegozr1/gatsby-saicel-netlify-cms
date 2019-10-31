@@ -32,7 +32,7 @@
 }
 
 .value-section--separator {
-    content: url("../../../../img/arrow-bottom.png");
+    content: url("../../../img/arrow-bottom.png");
     align-self: center;
     margin: 0 0 40px;
 }

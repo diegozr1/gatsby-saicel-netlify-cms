@@ -111,7 +111,7 @@
     }
     
     .home-section--background {
-        content: url(../../../../img/home-background.png);
+        content: url(../../../img/home-background.png);
         width: 80%;
         position: absolute;
         top: 0;
