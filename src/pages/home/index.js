@@ -12,18 +12,16 @@ import {
     ValueSection,
 } from "../../sections/HomePage";
 
-const Home = ({ path }) => {
-    return (
-        <Layout path={path}>
-            <HomeSection />
-            <CellSection />
-            <ValueSection />
-            <PressSection history={path} />
-            <LabSection />
-            <CarouselSection />
-            {/* <Contact /> */}
-        </Layout >
-    );
-};
+const Home = ({ path }) => (
+    <Layout path={path}>
+        <HomeSection />
+        <CellSection />
+        <ValueSection />
+        <PressSection history={path} />
+        <LabSection />
+        <CarouselSection />
+        {/* <Contact /> */}
+    </Layout >
+);
 
 export default Home;
