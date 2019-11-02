@@ -72,7 +72,7 @@ export default () => (
       query PatologiesRoll {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date]}
-          filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+          filter: { frontmatter: { templateKey: { eq: "patologies-post" } } }
         ) {
           edges {
             node {

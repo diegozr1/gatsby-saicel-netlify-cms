@@ -62,7 +62,7 @@ const Navbar = ({ path }) => {
                             <NavItem text="FAQ" link="/faq" icon={FAQIcon} alt="faq-icon" />
                         </li>
                         <li className="side-nav--menu-item">
-                            <NavItem text="Press" link="/press" icon={PressIcon} alt="press-icon" />
+                            <NavItem text="Press" link="/blog" icon={PressIcon} alt="press-icon" />
                         </li>
                     </ul>
                 </nav>
