@@ -27,12 +27,13 @@ export default class PatologiesIndexPage extends React.Component {
         </div>
         <p 
         style={{
-            paddingRight: '18em',
+            paddingTop: '4em',
+            paddingRight: '12em',
             paddingLeft: '4em',
             fontSize: '35px'
         }}
         >
-            Algunos tratamientos en los que hemos estado involucrados con muy buenos resultados son en transtornos neurológicos como: 
+          Algunos tratamientos en los que hemos estado involucrados con muy buenos resultados son en transtornos neurológicos como: 
         </p>
         <section className="section">
           <div className="container">
