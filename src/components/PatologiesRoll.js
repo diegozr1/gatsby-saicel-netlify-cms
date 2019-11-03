@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
-
+import { Button } from "./";
 class PatologiesRoll extends React.Component {
   render() {
     const { data } = this.props
@@ -10,18 +10,45 @@ class PatologiesRoll extends React.Component {
 
     return (
       <div className="columns">
-        <div className="column is-one-third"></div>
-        <div className="column is-multiline">
+        
+        <div className="column is-one-third">
+          {posts &&
+              posts.map(({ node: post }) => (
+                <p>
+                  <a href={`#${post.frontmatter.title.replace(/\s/g, '')}`} key={post.id}>{post.frontmatter.title}</a>
+                </p>
+              ))
+          }
+          <Button link="/contact"> Contactanos </Button>
+        </div>
+
+        <div className="column">
           {posts &&
             posts.map(({ node: post }) => (
-              <div className="is-parent column is-6" key={post.id}>
-                <article
-                  className={`blog-list-item tile is-child box notification ${
+              <div  key={post.id}>
+                <div
+                  className={`blog-list-item tile is-child  ${
                     post.frontmatter.featuredpost ? 'is-featured' : ''
                   }`}
                 >
-                  <header>
-                    {post.frontmatter.featuredimage ? (
+                  <header>                                        
+                      <h1 id={post.frontmatter.title.replace(/\s/g, '')}>
+                        <Link
+                          className="title is-size-1"
+                          to={post.fields.slug}
+                        >
+                          {post.frontmatter.title}                          
+                        </Link>
+                      </h1>                                                            
+                  </header>
+                  <br />
+                  <br />
+                  <p>
+                    {post.excerpt}
+                    <br />
+                    <br />                    
+                  </p>
+                  {post.frontmatter.featuredimage ? (
                       <div className="featured-thumbnail">
                         <PreviewCompatibleImage
                           imageInfo={{
@@ -31,31 +58,13 @@ class PatologiesRoll extends React.Component {
                         />
                       </div>
                     ) : null}
-                    <p className="post-meta">
-                      <Link
-                        className="title has-text-primary is-size-4"
-                        to={post.fields.slug}
-                      >
-                        {post.frontmatter.title}
-                      </Link>
-                      <span> &bull; </span>
-                      <span className="subtitle is-size-5 is-block">
-                        {post.frontmatter.date}
-                      </span>
-                    </p>
-                  </header>
-                  <p>
-                    {post.excerpt}
                     <br />
-                    <br />
-                    <Link className="button" to={post.fields.slug}>
-                      Keep Reading →
-                    </Link>
-                  </p>
-                </article>
+                    <br /> 
+                </div>
               </div>
-            ))}
+            ))}             
         </div>
+
     </div>
     )
   }
@@ -74,7 +83,7 @@ export default () => (
     query={graphql`
       query PatologiesRoll {
         allMarkdownRemark(
-          sort: { order: DESC, fields: [frontmatter___date]}
+          sort: { order: ASC, fields: [frontmatter___date]}
           filter: { frontmatter: { templateKey: { eq: "patologies-post" } } }
         ) {
           edges {

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Button, SectionName } from "../../../components";
+import { SectionName } from "../../../components";
 import { CellPageCover } from "../../../img";
 
 import "./MainSection.css";
@@ -17,7 +17,7 @@ const MainSection = () => (
             <img src={CellPageCover} alt="cell-page-cover" className="main-section--cover-img"/>
             <div className="main-section--secondary">
                 <p className="main-section--description">
-                    Algunos tratamientos en los que hemos estado involucrados con muy buenos resultados son en trastornos neurológicos
+                    Algunos tratamientos en los que hemos estado involucrados con muy buenos resultados son en trastornos neurológicos como:
                 </p>
             </div>
         </div>
