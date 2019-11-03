@@ -3,9 +3,10 @@ import PropTypes from 'prop-types'
 import { graphql, StaticQuery } from 'gatsby'
 import PreviewCompatibleImage from '../PreviewCompatibleImage'
 import { Button } from "..";
+import "./PatologiesRoll.css";
 class PatologiesRoll extends React.Component {
   render() {
-    const { data } = this.props
+    const { data, path } = this.props
     const { edges: posts } = data.allMarkdownRemark
 
     return (
@@ -13,12 +14,17 @@ class PatologiesRoll extends React.Component {
         
         <div className="column is-one-third">
           {posts &&
-              posts.map(({ node: post }) => (
-                <p key={post.id}>
-                  <a href={`#${post.frontmatter.title.replace(/\s/g, '')}`}>{post.frontmatter.title}</a>
-                </p>
-              ))
+              posts.map(({ node: post }) => {
+                const id = post.frontmatter.title.replace(/\s/g, '');
+                const active = path === id ? 'active' : '';
+                return (
+                  <p class="menu-item--container" key={post.id}>
+                    <a class={`menu-item--text ${active}`} href={`#${id}`}>{post.frontmatter.title}</a>
+                  </p>
+                )
+              })
           }
+          <br /> <br /> 
           <Button link="/contact"> Contactanos </Button>
         </div>
 
