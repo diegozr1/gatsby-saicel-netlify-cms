@@ -35,7 +35,9 @@ const Navbar = ({ path }) => {
         <header className={`nav--container ${isTop ? "" : "scrolled"}`}>
             <div className="nav--main">
                 <div className="nav--left">
-                    <img src={LogoWhite} className={`nav--logo ${normalNav ? "" : "white-logo"}`} alt="saicel-logo"/>
+                    <a href="/">
+                        <img src={LogoWhite} className={`nav--logo ${normalNav ? "" : "white-logo"}`} alt="saicel-logo"/>
+                    </a>   
                 </div>
                 <div className="nav--right">
                     <button className="nav--toggle" onClick={handleToggle}>
