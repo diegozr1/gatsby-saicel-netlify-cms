@@ -4,15 +4,13 @@ import Layout from '../../components/Layout'
 import { PatologiesRoll } from '../../components'
 import {MainSection} from "../../sections/PatologyPage"
 
-export default class PatologiesIndexPage extends React.Component {
-  render() {
-    return (            
-      <Layout path={this.props.path}>                        
-        <MainSection />
-        <section className="section">
-          <PatologiesRoll />
-        </section>
-      </Layout>      
-    )
-  }
-}
+const PatologiesIndexPage = ({ path, location }) => (            
+  <Layout path={path}>                        
+    <MainSection />
+    <section className="section">
+      <PatologiesRoll path={location} />
+    </section>
+  </Layout>      
+);
+
+export default PatologiesIndexPage;

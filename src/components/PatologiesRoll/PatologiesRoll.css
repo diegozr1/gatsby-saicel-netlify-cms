@@ -9,7 +9,7 @@
     border-bottom: 1px solid #D3D3D3;
 }
 
-.menu-item--text{
+.menu-item--text.active{
     padding:20px;
     border-left: 3px solid #1C94EB;
     color: #1E1E1E;

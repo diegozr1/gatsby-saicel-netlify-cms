@@ -15,11 +15,11 @@ class PatologiesRoll extends React.Component {
         <div className="column is-one-third">
           {posts &&
               posts.map(({ node: post }) => {
-                const id = post.frontmatter.title.replace(/\s/g, '');
-                const active = path === id ? 'active' : '';
+                const id = `#${post.frontmatter.title.replace(/\s/g, '')}`;
+                const active = path.hash === id ? 'active' : '';
                 return (
                   <p class="menu-item--container" key={post.id}>
-                    <a class={`menu-item--text ${active}`} href={`#${id}`}>{post.frontmatter.title}</a>
+                    <a class={`menu-item--text ${active}`} href={id}>{post.frontmatter.title}</a>
                   </p>
                 )
               })
@@ -79,7 +79,7 @@ PatologiesRoll.propTypes = {
   }),
 }
 
-export default () => (
+export default ({ path }) => (
   <StaticQuery
     query={graphql`
       query PatologiesRoll {
@@ -112,6 +112,6 @@ export default () => (
         }
       }
     `}
-    render={(data, count) => <PatologiesRoll data={data} count={count} />}
+    render={(data, count) => <PatologiesRoll path={path} data={data} count={count} />}
   />
 )
