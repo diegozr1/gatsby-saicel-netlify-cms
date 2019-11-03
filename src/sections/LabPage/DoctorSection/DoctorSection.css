@@ -1,0 +1,9 @@
+.doctor-section--main-text {
+    width: 44%;
+    margin-bottom: 114px;
+}
+
+.doctor-section--card-container {
+    display: flex;
+    justify-content: space-between;
+}

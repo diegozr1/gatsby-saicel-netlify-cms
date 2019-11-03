@@ -1,0 +1,8 @@
+.offer-section--container {
+    margin-bottom: 200px;
+}
+
+.saicel-section--bullet-container {
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,26 @@
+.doctor-card--container {
+    width: fit-content;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 20px 35px 0;
+}
+
+.doctor-card--img {
+    height: 309px;
+    width: 310px;
+    border-radius: 50%;
+    margin-bottom: 60px;
+}
+
+.doctor-card--name {
+    margin-bottom: 20px;
+}
+
+.doctor-card--spec {
+    color: #757575;
+    font-size: 24px;
+    letter-spacing: 0.25px;
+    line-height: 36px;
+    text-align: center;
+}
