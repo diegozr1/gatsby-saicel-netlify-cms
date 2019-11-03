@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link, graphql, StaticQuery } from 'gatsby'
-import PreviewCompatibleImage from './PreviewCompatibleImage'
-import { Button } from "./";
+import { graphql, StaticQuery } from 'gatsby'
+import PreviewCompatibleImage from '../PreviewCompatibleImage'
+import { Button } from "..";
 class PatologiesRoll extends React.Component {
   render() {
     const { data } = this.props
@@ -14,8 +14,8 @@ class PatologiesRoll extends React.Component {
         <div className="column is-one-third">
           {posts &&
               posts.map(({ node: post }) => (
-                <p>
-                  <a href={`#${post.frontmatter.title.replace(/\s/g, '')}`} key={post.id}>{post.frontmatter.title}</a>
+                <p key={post.id}>
+                  <a href={`#${post.frontmatter.title.replace(/\s/g, '')}`}>{post.frontmatter.title}</a>
                 </p>
               ))
           }
@@ -25,7 +25,7 @@ class PatologiesRoll extends React.Component {
         <div className="column">
           {posts &&
             posts.map(({ node: post }) => (
-              <div  key={post.id}>
+              <div key={post.id}>
                 <div
                   className={`blog-list-item tile is-child  ${
                     post.frontmatter.featuredpost ? 'is-featured' : ''
@@ -33,12 +33,7 @@ class PatologiesRoll extends React.Component {
                 >
                   <header>                                        
                       <h1 id={post.frontmatter.title.replace(/\s/g, '')}>
-                        <Link
-                          className="title is-size-1"
-                          to={post.fields.slug}
-                        >
-                          {post.frontmatter.title}                          
-                        </Link>
+                        {post.frontmatter.title}                          
                       </h1>                                                            
                   </header>
                   <br />
