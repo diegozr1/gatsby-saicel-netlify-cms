@@ -6,7 +6,10 @@ description: ' Pellentesque habitant morbi tristique senectus et netus et malesu
 featuredpost: false
 featuredimage: /img/products-grid2.jpg
 tags:
-  - rejuvencimiento
+  - aumento de la tolerancia a diferentes productos alimentarios y mejoramiento de la digestion
+  - mejoramiento del contacto con otros niños
+  - formar o regenerar tejido del músculo cardiaco en zonas infartadas (infarto reciente)
+  - Disminuir la inflamación del tejido del corazon
 ---
  Proin lacinia lorem eget tellus tincidunt vestibulum. Etiam felis tellus, dictum id sapien ac, ullamcorper ornare purus. Sed laoreet congue purus sit amet imperdiet. Aenean rhoncus arcu ipsum, a lacinia nibh rhoncus sit amet. Nulla ut interdum lacus, vitae fringilla ipsum. Aenean ornare tellus a purus lobortis, eu tincidunt massa ornare. Donec laoreet lacus vitae porta sollicitudin. Pellentesque iaculis at magna sit amet scelerisque. Aenean suscipit, lectus et malesuada tincidunt, tellus leo semper orci, at porttitor lectus mauris et est. Etiam sit amet luctus est. Pellentesque ac finibus dolor, a convallis elit. Quisque fermentum nec nunc a bibendum. In congue, nibh vitae bibendum tempor, diam purus laoreet tortor, non congue justo augue non ante. Sed in ipsum lobortis, posuere lorem non, molestie dolor. 
 
