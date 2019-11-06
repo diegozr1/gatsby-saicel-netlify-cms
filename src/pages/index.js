@@ -1,6 +1,6 @@
 import React from "react";
 
-import Layout from "../../components/Layout";
+import Layout from "../components/Layout";
 // import { Contact } from "../../components";
 
 import {
@@ -10,7 +10,7 @@ import {
     LabSection,
     PressSection,
     ValueSection,
-} from "../../sections/HomePage";
+} from "../sections/HomePage";
 
 const Home = ({ path }) => (
     <Layout path={path}>
