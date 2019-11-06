@@ -7,5 +7,7 @@ export { default as CountCard } from "./CountCard";
 export { default as DoctorCard } from "./DoctorCard";
 export { default as Footer } from "./Footer";
 export { default as Navbar } from "./Navbar";
-export { default as PatologiesRoll } from "./PatologiesRoll";
+export { default as PatologiesSection } from "./PatologiesSection";
+export { default as PatologyNav } from "./PatologyNav";
+export { default as PatologyPost } from "./PatologyPost";
 export { default as SectionName } from "./SectionName";

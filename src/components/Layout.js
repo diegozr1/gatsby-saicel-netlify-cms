@@ -1,7 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import { Footer, Navbar } from '../components'
-import 'bulma/css/bulma.css'
+// import 'bulma/css/bulma.css'
 import 'material-icons/iconfont/material-icons.scss'
 import './global.css'
 import useSiteMetadata from './SiteMetadata'

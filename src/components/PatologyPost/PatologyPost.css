@@ -1,0 +1,50 @@
+.patology--post {
+    padding-bottom: 115px;
+}
+
+.patology--title {
+    margin-bottom: 45px;
+}
+
+.patology--description {
+    -webkit-column-count: 2; /* Old Chrome, Safari and Opera */
+    -moz-column-count: 2; /* Old Firefox */
+    column-count: 2;
+    color: #A9A9A9;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.16px;
+    line-height: 28px;
+    margin-bottom: 35px;
+}
+
+.patology--body {
+    margin-bottom: 25px;
+}
+
+.patology--objective-title {
+    margin: 45px 0 60px;
+}
+
+.objective-wrapper--container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}  
+
+.objective-wrapper--element {
+    display: flex;
+    flex-flow: column;
+    width: 360px;
+    font-size: 24px;
+    font-weight: lighter;
+    color: #A9A9A9;
+    padding-bottom: 115px;
+}
+
+.objective-wrapper--arrow {
+    width: 24px;
+    margin-left: 25px;
+    margin-bottom: 18px;
+}

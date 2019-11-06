@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Assistant', sans-serif;
+  }
+  
+html {
+  scroll-behavior: smooth;
+}
+
+.css-bd6xg5-PreviewPaneContainer {
+  overflow: hidden;
+}
+
+#root {
+  background-color: #FAFAFA;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+section {
+  margin: 0 20px;
+  display: flex;
+  flex-flow: column;
+  padding: 85px 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'DM Sans', sans-serif;
+}
+
+h1 {
+  font-size: 70px;
+}
+
+h3 {
+  font-size: 50px;
+  line-height: 56px;
+  letter-spacing: 0.2px;
+}
+
+h4 {
+  color: #1E1E1E;
+  font-size: 24px;
+  letter-spacing: 0.25px;
+  line-height: 31px;
+}
+
+h5 {
+  color: #1E1E1E;
+  font-size: 32px;
+  letter-spacing: 0.2px;
+  line-height: 35px;
+  text-align: center;
+}
+
+p {
+  font-size: 25px;
+  line-height: 38px;
+  letter-spacing: 0.25px;
+  color: #555;
+}
+
+
+.patology--section {
+  padding-top: 0;
+  flex-flow: row;
+}
+
+.patology--posts {
+  padding-left: 145px;
+}
+
+.patology--post {
+  padding-bottom: 115px;
+}
+
+.patology--title {
+  margin-bottom: 45px;
+}
+
+.patology--description {
+  -webkit-column-count: 2; /* Old Chrome, Safari and Opera */
+  -moz-column-count: 2; /* Old Firefox */
+  column-count: 2;
+  color: #A9A9A9;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.16px;
+  line-height: 28px;
+  margin-bottom: 35px;
+}
+
+.patology--body {
+  margin-bottom: 25px;
+}
+
+.patology--objective-title {
+  margin: 45px 0 60px;
+}
+
+.objective-wrapper--container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}  
+
+.objective-wrapper--element {
+  display: flex;
+  flex-flow: column;
+  width: 360px;
+  font-size: 24px;
+  font-weight: lighter;
+  color: #A9A9A9;
+  padding-bottom: 115px;
+}
+
+.objective-wrapper--arrow {
+  width: 24px;
+  margin-left: 25px;
+  margin-bottom: 18px;
+}
+
+@media only screen and (min-width: 992px) {
+  section {
+    width: calc(1440px - 150px);
+    margin: 0 75px;
+    padding: 140px 0;
+  }
+
+  h1 {
+    font-size: 70px;
+    font-family: 'DM Sans', sans-serif;
+  }
+  
+  h3 {
+    font-size: 50px;
+    line-height: 56px;
+    letter-spacing: 0.2px;
+  }
+}
+
+/* h1 {
+  font-size: 70px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+h3 {
+  font-size: 50px;
+  line-height: 56px;
+  letter-spacing: 0.2px;
+  font-family: 'DM Sans', sans-serif;
+}
+  
+p {
+  font-size: 25px;
+  line-height: 38px;
+  letter-spacing: 0.25px;
+  color: #555;
+} */

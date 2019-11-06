@@ -30,6 +30,7 @@
 }
 
 .primary:hover {
+    color: #ffffff;
     background-color: #0778ca;
     border: 1px solid #0778ca;
 }

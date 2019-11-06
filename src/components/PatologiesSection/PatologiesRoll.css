@@ -1,0 +1,8 @@
+.patology--section {
+    padding-top: 0;
+    flex-flow: row;
+}
+
+.patology--posts {
+    padding-left: 145px;
+}
