@@ -16,7 +16,6 @@
 
 .nav--logo {
     content: url(../../img/Logo_white_short.png);
-    margin-left: -15px;
 }
 
 .nav--logo.white-logo {

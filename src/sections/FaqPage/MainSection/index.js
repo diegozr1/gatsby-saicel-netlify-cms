@@ -1,6 +1,7 @@
 import React from "react";
 
 import { SectionName } from "../../../components";
+import { FAQIcon } from "../../../img";
 import { Accordion, AccordionItem } from 'react-light-accordion';
 import 'react-light-accordion/demo/css/index.css';
 
@@ -11,7 +12,7 @@ const MainSection = () => (
     <section className="main-section">
         <div className="row">
             <div className="column-left">                
-                <SectionName sectionName="Preguntas Frecuentes (FAQ)" />                
+                <SectionName sectionName="Preguntas Frecuentes (FAQ)" icon={FAQIcon} alt="faq-icon" />                
                 <p class="left-question">
                     ¿Tienes más preguntas?
                 </p>                

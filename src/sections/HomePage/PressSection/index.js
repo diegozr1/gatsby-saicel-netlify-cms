@@ -10,13 +10,14 @@ import {
     CardImage,
     CardImage1,
     CardImage2,
+    PressIcon
 } from "../../../img";
 
 import "./PressSection.css";
 
 const PressSection = ({ history }) => (
     <section className="press-section">
-        <SectionName sectionName="Press" />
+        <SectionName sectionName="Press" icon={PressIcon} alt="press-icon" />
         <div className="press-section--container">
             <h3 className="press-title--main-text">
                 Entérate de lo más nuevo sobre terapia celular

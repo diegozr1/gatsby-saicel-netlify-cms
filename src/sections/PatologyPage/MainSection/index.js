@@ -1,7 +1,7 @@
 import React from "react";
 
 import { SectionName } from "../../../components";
-import { CellPageCover } from "../../../img";
+import { CellPageCover, PatIcon } from "../../../img";
 
 import "./MainSection.css";
 
@@ -9,7 +9,7 @@ const MainSection = () => (
     <section className="main-section--patology">
         <div className="main-section--container">
             <div className="main-section--title">
-                <SectionName sectionName="Patologías" />
+                <SectionName sectionName="Patologías" icon={PatIcon} alt="pat-icon" />
                 <h3 className="main-section--main-text">
                     Regeneración celular para una mejor vida
                 </h3>

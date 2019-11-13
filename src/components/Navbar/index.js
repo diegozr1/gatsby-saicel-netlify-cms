@@ -15,11 +15,11 @@ import {
 
 import "./Navbar.css";
 
-const Navbar = ({ path }) => {
+const Navbar = () => {
     const [toggle, setToggle] = useState(false);
     const [isTop, setIsTop] = useState(true);
     const windowGlobal = typeof window !== 'undefined' ? window : 0;
-    const normalNav = path === "/";
+    const normalNav = windowGlobal.location && windowGlobal.location.pathname === "/";
     useEffect(() => {
         const onScroll = () => {
             const newIsTop = windowGlobal.scrollY < 50;

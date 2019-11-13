@@ -1,14 +1,14 @@
 import React from "react";
 
 import { DoctorCard, SectionName } from "../../../components";
-import { DoctorImg } from "../../../img";
+import { DoctorImg, LabIcon } from "../../../img";
 
 import "./DoctorSection.css";
 
 const DoctorSection = () => (
     <section className="doctor-section">
         <div className="doctor-section--container">
-            <SectionName sectionName="Nuestros Médicos"/>
+            <SectionName sectionName="Nuestros Médicos" icon={LabIcon} alt="lab-icon"/>
             <h3 className="doctor-section--main-text">
                 Los mejores médicos en células madres
             </h3>

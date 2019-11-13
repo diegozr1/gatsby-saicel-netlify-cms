@@ -37,6 +37,7 @@
 
 .card--date {
     color: #555;
+    font-weight: 300;
 }
 
 .card--description {

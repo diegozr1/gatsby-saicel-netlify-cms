@@ -6,14 +6,14 @@ import {
     CountCard,
     SectionName,
 } from "../../../components";
-import { CellImage } from "../../../img";
+import { CellImage, CellIcon } from "../../../img";
 
 import "./CellSection.css";
 
 const CellSection = () => (
     <Fade>
         <section id="cells" className="cells-section">
-            <SectionName sectionName="Células Madre" />
+            <SectionName sectionName="Células Madre" icon={CellIcon} alt="cell-icon" />
             <div className="cells-section--container">
                 <div className="cells-section--title">
                     <Fade left={true}>
@@ -24,7 +24,8 @@ const CellSection = () => (
                     <Fade right={true}>
                         <div className="cells-title--secondary-text">
                             <p className="cells-title--description">
-                                Trabajamos para cambiar el paradigma de medicar, a regenerar a las personas.
+                            Nuestro trabajo cientifico pertenece a la parte moderna de la medicina:
+                            no ofertamos milagros, ofertamos ciencia.
                             </p>
                             <div className="cells-title--button-group">
                                 <Button link="/our-lab"> Descubre más </Button>

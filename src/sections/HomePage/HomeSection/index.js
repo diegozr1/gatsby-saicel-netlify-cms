@@ -14,8 +14,7 @@ const HomeSection = () => (
             <div className="home-title--container">
                 <h1 className="home-title--main-text"> Cambiando la forma de hacer medicina </h1>
                 <p className="home-title--description">
-                    Nuestro trabajo cientifico pertenece a la parte moderna de la medicina:
-                    no ofertamos milagros, ofertamos ciencia.
+                    Trabajamos para cambiar el paradigma de medicar, a regenerar a las personas.
                 </p>
                 <div className="home-title--button-group">
                     <Button type="primary" link="/celulas-madre"> Todo sobre celulas madre </Button>

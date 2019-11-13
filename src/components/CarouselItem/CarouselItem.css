@@ -15,7 +15,8 @@
 .carousel-item--title {
     font-family: 'DM Sans', sans-serif;
     font-size: 19px;
-    letter-spacing: 0.2;
+    font-weight: 500;
+    letter-spacing: 0.2px;
     text-align: center;
     color: #4F4F4F;
     margin: 25px 0 18px;

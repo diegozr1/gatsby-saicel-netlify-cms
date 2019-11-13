@@ -10,6 +10,7 @@ import {
     ValueImg1,
     ValueImg2,
     ValueImg3,
+    LabIcon
 } from "../../../img";
 
 import "./ValueSection.css";
@@ -17,7 +18,7 @@ import "./ValueSection.css";
 const ValueSection = () => {
     return (
         <section className="value-section">
-            <SectionName sectionName="Oferta de valor" />
+            <SectionName sectionName="Nuestro Laboratorio" icon={LabIcon} alt="lab-icon" />
             <div className="value-section--container">
                 <h3 className="value-title--main-text">
                     ¿Por qué somos confiables?

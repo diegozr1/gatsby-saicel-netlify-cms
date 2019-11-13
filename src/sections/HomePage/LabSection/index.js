@@ -7,13 +7,14 @@ import {
 } from "../../../components";
 import {
     LabImage,
+    LabIcon
 } from "../../../img";
 
 import "./LabSection.css";
 
 const LabSection = () => (
     <section className="lab-section">
-        <SectionName sectionName="Nuestros laboratorio" />
+        <SectionName sectionName="Nuestros laboratorio" icon={LabIcon} alt="lab-icon" />
         <div className="lab-section--container">
             <div className="lab-section--header">
                 <div className="lab-section--title">

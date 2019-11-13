@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Button, SectionName } from "../../../components";
-import { CellPageCover } from "../../../img";
+import { CellPageCover, CellIcon } from "../../../img";
 
 import "./MainSection.css";
 
@@ -9,7 +9,7 @@ const MainSection = () => (
     <section className="main-section">
         <div className="main-section--container">
             <div className="main-section--title">
-                <SectionName sectionName="Células Madre" />
+                <SectionName sectionName="Células Madre" icon={CellIcon} alt="cell-icon" />
                 <h3 className="main-section--main-text">
                     Todo sobre las células madre y sus posibilidades de regenerar nuestro cuerpo
                 </h3>

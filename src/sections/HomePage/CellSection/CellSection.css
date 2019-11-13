@@ -59,6 +59,7 @@
 
     .cells-section--text {
         font-size: 25px;
+        line-height: 38px;
         text-align: left;
     }
 
@@ -84,9 +85,8 @@
     }
 
     .cells-title--secondary-text {
-        width: 44%;
+        width: 49%;
         align-items: flex-start;
-        margin-right: 55px;
     }
 
     .cells-title--description {
