@@ -18,11 +18,6 @@
     content: url(../../img/Logo_white_short.png);
 }
 
-.nav--logo.white-logo {
-    content: url(../../img/Logo_white_short.png) !important;
-    margin-left: -15px;
-}
-
 .nav--right {
     display: flex;
     align-items: center;
