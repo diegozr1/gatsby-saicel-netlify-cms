@@ -16,9 +16,9 @@ const MainSection = () => (
                 <p class="left-question">
                     ¿Tienes más preguntas?
                 </p>                
-                <div class="card">
+                <div class="faq-card">
                     <img src="https://www.benlcollins.com/wp-content/uploads/2016/01/quora.png" width="50%"></img>
-                    <div class="container">
+                    <div class="faq-container">
                         <b className="ask-card"> Pregúntanos algo en Quora </b>                        
                     </div>
                 </div> 
