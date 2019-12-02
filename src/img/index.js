@@ -27,6 +27,7 @@ export { default as LabIcon} from "./nav-lab-icon.png";
 export { default as MenuIcon} from "./nav-menu.png";
 export { default as OfferImgLeft } from "./offer-img-left.png";
 export { default as OfferImgRight } from "./offer-img-right.png";
+export { default as QuoraRedIcon } from "./quora_red.png";
 export { default as PatIcon} from "./nav-pat-icon.png";
 export { default as PressIcon} from "./nav-press-icon.png";
 export { default as ValueImg1 } from "./value-img-1.png";

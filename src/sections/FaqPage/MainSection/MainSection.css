@@ -1,46 +1,20 @@
-/*
-.main-section {
-    width: 100%;
-}
-
-.main-section--container {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-}
-
-.main-section--title {
-    margin: 0 20px;
-}
-
-.main-section--main-text {
-    margin-bottom: 40px;
-}
-
-.main-section--cover-img {
-    width: 100%;
-    margin-bottom: 40px;
-}
-
-.main-section--description {
-    margin: 0 20px 32px;
-    font-size: 4px;
-}
-*/
 .row {
     display: flex;
-    margin: 0 80px;
 }
 
 .column-left{
-    flex: 33%;
+    display: none;
 }
 
-.column-right{
-    flex: 67%;
+.column-right {
+    width: 100%;
 }
 
-.left-question{    
+.column-right .section-name--container {
+    margin: 0 0 35px 20px;
+}
+
+.left-question {    
     padding-bottom: 40px;
     font-size: 28px;
 }
@@ -49,13 +23,18 @@
 
 .faq-card {    
     margin-top: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     align-items: center;
     text-align: center;
-    padding:50px;
-    width: 45%;
-    
+    width: 268px;
+    padding: 30px 0;
+    background-color: #FFF;
+    box-shadow: 0 2px 56px 0 rgba(30,30,30,0.05)
+}
+
+.faq-quora-img {
+    width: 107px;
+    margin-bottom: 30px;
 }
 
 .faq-card:hover {
@@ -63,112 +42,166 @@
 }
 
 .faq-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
     padding: 2px 16px;
 }
 
 .ask-card {    
-    color: #808080;
+    color: #828282;
+    font-family: 'Assistant';
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.37px;
+    line-height: 29px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq-body {
+    color: #1C1D1C;
+    font-family: "Assistant";
+    font-weight: 300;
     font-size: 20px;
-} */
+    letter-spacing: 0.25px;
+    line-height: 30px;
+    padding: 40px;
+}
+
+.faq-quora-button {
+    width: 145px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 4px;
+    background-color: #FFF;
+    box-shadow: 0 4px 18px 0 rgba(99,109,117,0.22);
+}
+
+.faq-quora-text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #1C1D1C;
+    font-family: "Assistant";
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+    line-height: 20px
+}
+
+.faq-quora-icon {
+    height: 100%;
+    width: 46px;
+    border-radius: 4px;
+}
+
+/* accordion */
+
+.accordion {
+    border: none !important;
+}
+
+.accordion .accordion-item {
+    border-top: 1px solid #ddd;
+}
+
+.accordion .accordion-item .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    color: #1E1E1E;
+    font-family: "DM Sans";
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.19px;
+    line-height: 23px;
+    background: transparent;
+    cursor: pointer;
+    -webkit-transition: 0.4s all;
+    -o-transition: 0.4s all;
+    transition: 0.4s all;
+}
+
+.accordion .accordion-item.active .title {
+    background: #eee !important;
+}
+
+.accordion .accordion-item .title:after {
+    font-family: 'Material Icons';
+    content: 'keyboard_arrow_down';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #757575;
+    color: #757575;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    float: none;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.accordion .accordion-item.active .title:after {
+    font-family: 'Material Icons';
+    content: 'keyboard_arrow_up' !important;
+}
+
+.accordion .accordion-item .panel {
+    height: 0;
+    -webkit-transition: all 0.15s ease-out;
+    -o-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
+    overflow: hidden;
+    padding: '24px';
+}
+
+.accordion .accordion-item.active .panel {
+    height: 100%;
+    -webkit-transition: all 0.25s ease-in;
+    -o-transition: all 0.25s ease-in;
+    transition: all 0.25s ease-in;
+    padding: '24px';
+}
 
 @media only screen and (max-width: 768px) {
-    .column-left{
-        display: none;
-    }
 }
 
 @media only screen and (min-width: 992px) {
     .main-section {
         margin: 40px 0 0;
     }
-    /*
-    .main-section--title {
-        width: calc(1440px - 150px);
-        margin: 0 75px;
-    }
-    
-    .main-section--cover-img {
-        margin-bottom: 60px;
+
+    .row {
+        margin: 0 80px;
     }
 
-    .main-section--main-text {
-        width: 57%;
-        text-align: left;
-        margin-right: 30px;
-        margin-bottom: 60px;
+    .column-left {
+        display: block;
+        width: 303px;
+        margin-right: 139px;
     }
 
-    .main-section--secondary {
-        width: calc(1440px - 150px);
-        margin: 0 75px;
+    .column-right .section-name--container {
+        display: none;
+        margin: 0 0 35px 20px;
     }
 
-    .main-section--description {
-        width: 75%;
-        margin: 0 0 52px;
-        color: #1C1D1C;
-        font-size: 34px;
-        letter-spacing: 0.34px;
-        line-height: 42px;
-    }*/
+    .accordion .accordion-item .title {
+        padding: 30px 40px;
+        font-size: 24px;
+        letter-spacing: 0.25px;
+        line-height: 31px;
+    }
+
+    .accordion .accordion-item .title:after {
+        width: 32px;
+        height: 32px;
+        font-size: 22px;
+    }
 }
-
-
-/* accordion */
-
-.accordion {
-    border-radius: 0px;
-    border-top: 1px solid #d9d9d9;
-  }
-  .accordion .accordion-item:first-child .title {
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-  }
-  .accordion .accordion-item:last-child .title {
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-  }
-  .accordion .accordion-item .title {
-    background-color: #f6f6f6;
-    color: #444;
-    cursor: pointer;
-    padding: 28px;
-    width: 100%;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: left;
-    border: none;
-    outline: none;
-    -webkit-transition: 0.4s;
-    -o-transition: 0.4s;
-    transition: 0.4s;
-  }
-  .accordion .accordion-item .title:after {
-    content: '\2795';
-    font-size: 13px;
-    color: #777;
-    float: right;
-    margin-left: 5px;
-  }
-  .accordion .accordion-item .panel {
-    max-height: 0;
-    -webkit-transition: max-height 0.15s ease-out;
-    -o-transition: max-height 0.15s ease-out;
-    transition: max-height 0.15s ease-out;
-    overflow: hidden;
-    padding: '24px';
-  }
-  .accordion .accordion-item.active .title {
-    background-color: #eee;
-  }
-  .accordion .accordion-item.active .title:after {
-    content: '\2796';
-  }
-  .accordion .accordion-item.active .panel {
-    max-height: 500px;
-    -webkit-transition: max-height 0.25s ease-in;
-    -o-transition: max-height 0.25s ease-in;
-    transition: max-height 0.25s ease-in;
-    padding: '24px';
-  }
-  /*# sourceMappingURL=index.css.map*/  
