@@ -11,6 +11,18 @@
     cursor: pointer;
 }
 
+.card.card.no-hover {
+    cursor: default;
+}
+
+.card.no-hover:hover {
+    box-shadow: none;
+}
+
+.card.no-hover:hover .card--title {
+    color: inherit;
+}
+
 .card:hover {
     box-shadow: 0 20px 56px 0 rgba(30,30,30,0.15);
 }
@@ -42,6 +54,10 @@
 
 .card--description {
     font-weight: 100;
+    color: #555;
+    font-size: 24px;
+    letter-spacing: 0.25px;
+    line-height: 30px;
 }
 
 @media only screen and (min-width: 768px) {

@@ -1,8 +1,8 @@
 .section-name--container {
     width: 235px;
-    margin: 0 auto 40px;
+    margin: 0 0 40px;
     padding-top: 15px;
-    border-top: 2px solid #FF9FC1;
+    border-top: 1px solid #FF9FC1;
     text-align: center;
 }
 
@@ -22,7 +22,7 @@
 @media only screen and (min-width: 768px) {
     .section-name--container {
         width: 300px;
-        margin: 0 auto 60px;
+        border-top: 2px solid #FF9FC1;
         padding-top: 14px;
     }
 

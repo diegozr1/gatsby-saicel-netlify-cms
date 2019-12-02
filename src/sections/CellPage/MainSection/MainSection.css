@@ -23,11 +23,22 @@
 }
 
 .main-section--description {
-    margin: 0 20px 32px;
+    margin-bottom: 32px;
+}
+
+.main-section--secondary {
+    margin: 0 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 }
 
 @media only screen and (min-width: 768px) {
-
+    .main-section--secondary {
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+    }
 }
 
 @media only screen and (min-width: 992px) {

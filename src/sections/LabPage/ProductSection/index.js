@@ -8,11 +8,12 @@ import {
 
 import {
     CardImage,
+    PatIcon
 } from "../../../img";
 
 const ProductSection = () => (
     <section className="press-section">
-        <SectionName sectionName="Nuestros productos" />
+        <SectionName sectionName="Nuestros productos" icon={PatIcon} alt="product-icon" />
         <div className="press-section--container">
             <h3 className="press-title--main-text">
                 Conoce nuestra variedad en productos
@@ -21,7 +22,6 @@ const ProductSection = () => (
                 <Fade right={true}>
                     <Card
                         img={CardImage}
-                        link="/press"
                         title="Nombre del producto a dos lineas"
                         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                     />
@@ -29,7 +29,6 @@ const ProductSection = () => (
                 <Fade right={true} delay={500}>
                     <Card
                         img={CardImage}
-                        link="/press"
                         title="Nombre del producto a dos lineas"
                         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                     />
@@ -37,7 +36,6 @@ const ProductSection = () => (
                 <Fade right={true} delay={1000}>
                     <Card
                         img={CardImage}
-                        link="/press"
                         title="Nombre del producto a dos lineas"
                         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                     />

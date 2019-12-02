@@ -1,20 +1,20 @@
 .doctor-card--container {
-    width: fit-content;
+    width: 100%;
     display: flex;
     flex-flow: column;
     align-items: center;
-    padding: 20px 35px 0;
+    padding: 30px 0 0;
 }
 
 .doctor-card--img {
     height: 309px;
     width: 310px;
     border-radius: 50%;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 .doctor-card--name {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .doctor-card--spec {
@@ -23,4 +23,18 @@
     letter-spacing: 0.25px;
     line-height: 36px;
     text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 992px) {
+    .doctor-card--container {
+        width: 368px;
+        padding: 0;
+    }
+
+    .doctor-card--img {
+        margin-bottom: 60px;
+    }
 }

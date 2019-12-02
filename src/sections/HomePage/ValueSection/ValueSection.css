@@ -39,7 +39,8 @@
 }
 
 .value-section--description {
-    font-size: 12px;
+    font-size: 14px;
+    letter-spacing: 0.14px;
     line-height: 18px;
     margin-bottom: 24px;
 }

@@ -53,7 +53,7 @@ const ValueSection = () => {
                             <p className="value-section--description">
                                 Cada lote se evalúa para la diferenciación de osteoblastos,
                                 adipocitos y condrocitos de acuerdo con las normas de la ISCT
-                                es decir, para los siguientes marcadores:
+                                es decir, para los siguientes marcadores: <br />
                                 CD73+/CD90+/CD105+ and CD14-/CD19-/CD34-/CD45-HLA-DR
                             </p>
                             <Button link="/our-lab"> Nuestros Laboratorios </Button>

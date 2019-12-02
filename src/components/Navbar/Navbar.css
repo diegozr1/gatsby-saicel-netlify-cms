@@ -108,7 +108,17 @@
     }
 
     .nav--container .nav--logo {
+        content: url(../../img/Logo_white_short.png);
+        margin-left: -15px;
+    }
+
+    .nav--container .nav--logo.white-logo {
         content: url(../../img/Logo_dark_short.png);
+    }
+
+    .nav--container.scrolled .nav--logo.white-logo {
+        content: url(../../img/Logo_white_short.png);
+        margin-left: -15px;
     }
 
     .nav--container.scrolled .nav--logo {

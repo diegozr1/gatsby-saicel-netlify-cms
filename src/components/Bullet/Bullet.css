@@ -1,8 +1,9 @@
 .bullet--container {
-    width: calc(409px - 40px);
+    width: 100%;
     display: flex;
     flex-flow: column;
-    margin: 0 20px;
+    align-items: center;
+    margin-top: 20px;
 }
 
 .bullet--icon {
@@ -15,4 +16,14 @@
     font-size: 25px;
     letter-spacing: 0.25px;
     line-height: 38px;
+}
+
+@media only screen and (min-width: 992px) {
+    .bullet--container {
+        width: calc(409px - 40px);
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+        margin: 0 20px;
+    }
 }

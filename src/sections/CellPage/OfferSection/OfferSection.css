@@ -1,55 +1,109 @@
+.offer-section {
+    margin: 0;
+}
+
 .offer-section--container {
     display: flex;
     justify-content: space-between;
+    flex-flow: wrap;
 }
 
 .offer-section--right-side {
-    width: 23%;
+    width: 100%;
     display: flex;
     flex-flow: column;
+    align-items: center;
+    margin: 0 20px;
 }
 
 .offer-section--left-side {
-    width: 66%;
+    width: 100%;
     display: flex;
     flex-flow: column;
 }
 
 .offer-section--img-right {
-    margin-bottom: 70px;
-}
-
-.offer-section--text-right {
-    color: #1C1D1C;
-    font-size: 25px;
-    letter-spacing: 0.25px;
-    line-height: 38px;
-    padding: 32px 0;
+    width: 298px;
     margin-bottom: 30px;
-    border-top: 1px solid #FF9FC1;
-}
-
-.offer-section--main-text {
-    width: 70%;
-    margin-bottom: 50px;
 }
 
 .offer-section--img-left {
-    height: 478.48px;
-    margin-bottom: 70px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.offer-section--main-text {
+    margin: 0 20px 30px;
+}
+
+.offer-section--bottom {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 0 20px 30px;
 }
 
 .offer-section--description {
     color: #1C1D1C;
-    font-size: 25px;
-    letter-spacing: 0.25px;
-    line-height: 38px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
-.offer-section--bottom {
-    width: 61%;
-    display: flex;
-    flex-flow: column;
-    align-self: flex-end;
+
+@media only screen and (min-width: 768px) {
+    .offer-section--right-side {
+        width: 70%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .offer-section--right-side {
+        width: 23%;
+        margin: 0;
+    }
+    
+    .offer-section--left-side {
+        width: 66%;
+    }
+    
+    .offer-section--img-right {
+        margin-bottom: 70px;
+    }
+    
+    .offer-section--text-right {
+        color: #1C1D1C;
+        font-size: 25px;
+        letter-spacing: 0.25px;
+        line-height: 38px;
+        padding: 32px 0;
+        margin-bottom: 30px;
+        border-top: 1px solid #FF9FC1;
+    }
+    
+    .offer-section--main-text {
+        width: 70%;
+        margin-bottom: 50px;
+    }
+    
+    .offer-section--img-left {
+        height: 478.48px;
+        margin-bottom: 70px;
+    }
+    
+    .offer-section--description {
+        color: #1C1D1C;
+        font-size: 25px;
+        letter-spacing: 0.25px;
+        line-height: 38px;
+        margin-bottom: 15px;
+    }
+    
+    .offer-section--bottom {
+        width: 61%;
+        display: flex;
+        flex-flow: column;
+        align-self: flex-end;
+        align-items: flex-start;
+        margin: 0;
+    }
 }

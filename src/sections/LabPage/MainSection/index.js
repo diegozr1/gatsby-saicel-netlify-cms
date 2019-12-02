@@ -1,13 +1,13 @@
 import React from "react";
 
 import { Button, SectionName } from "../../../components";
-import { LabPageCover } from "../../../img";
+import { LabPageCover, LabIcon } from "../../../img";
 
 const MainSection = () => (
     <section className="main-section">
         <div className="main-section--container">
             <div className="main-section--title">
-                <SectionName sectionName="Nuestro laboratorio" />
+                <SectionName sectionName="Nuestro laboratorio" icon={LabIcon} alt="lab-icon" />
                 <h3 className="main-section--main-text">
                     Nos gustan los casos difíciles, por lo que trabajamos mano a mano con los médicos
                 </h3>

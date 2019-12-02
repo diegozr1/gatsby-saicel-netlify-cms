@@ -8,7 +8,6 @@ import 'react-light-accordion/demo/css/index.css';
 import "./MainSection.css";
 
 const MainSection = () => (
-    
     <section className="main-section">
         <div className="row">
             <div className="column-left">                
@@ -17,7 +16,7 @@ const MainSection = () => (
                     ¿Tienes más preguntas?
                 </p>                
                 <div class="faq-card">
-                    <img src="https://www.benlcollins.com/wp-content/uploads/2016/01/quora.png" width="50%"></img>
+                    <img src="https://www.benlcollins.com/wp-content/uploads/2016/01/quora.png" alt="quora-link" width="50%"></img>
                     <div class="faq-container">
                         <b className="ask-card"> Pregúntanos algo en Quora </b>                        
                     </div>
@@ -25,7 +24,6 @@ const MainSection = () => (
             </div>
             <div className="column-right">
             <Accordion atomic={true}>
-
                 <AccordionItem title="¿Por qué Células Madres Mesenquimales?">
                     <DummyContent />
                 </AccordionItem>
@@ -37,11 +35,9 @@ const MainSection = () => (
                 <AccordionItem title="¿Cómo son las dosis o viales?">
                     <DummyContent />
                 </AccordionItem>
-
             </Accordion>
             </div>
         </div>
-        
     </section>
 );
 

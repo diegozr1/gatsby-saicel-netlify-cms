@@ -36,7 +36,7 @@ const Navbar = () => {
             <div className="nav--main">
                 <div className="nav--left">
                     <a href="/">
-                        <img src={LogoWhite} className={`nav--logo ${normalNav ? "" : "white-logo"}`} alt="saicel-logo"/>
+                        <img src={LogoWhite} className={`nav--logo ${normalNav ? "white-logo" : ""}`} alt="saicel-logo"/>
                     </a>   
                 </div>
                 <div className="nav--right">

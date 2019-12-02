@@ -1,8 +1,21 @@
 .offer-section--container {
-    margin-bottom: 200px;
+    margin: 0 0 30px;
 }
 
 .saicel-section--bullet-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-flow: wrap;
+    margin: 0 20px;
+}
+
+@media only screen and (min-width: 992px) {
+    .offer-section--container {
+        margin: 0 0 200px;
+    }    
+
+    .doctor-section--card-container {
+        justify-content: space-between;
+        flex-flow: nowrap;
+    }
 }
